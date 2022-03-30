@@ -90,31 +90,17 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Open Internal Photolist"
+                android:text="Open Photolist Internal or External"
                 android:textSize="22sp"
                 android:textColor="@color/white"/>
 
             <Button
-                android:id="@+id/bt_open_photo_int"
+                android:id="@+id/bt_open_photo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Open Photolist"/>
 
-            <TextView
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Open External Photolist"
-                android:textSize="22sp"
-                android:textColor="@color/white"/>
-
-            <Button
-                android:id="@+id/bt_open_photo_ext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Open Photolist"/>
 
         </LinearLayout>
 

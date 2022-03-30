@@ -41,8 +41,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var bt_read_ext:Button
     lateinit var bt_delete_ext:Button
     lateinit var bt_take_photo:Button
-    lateinit var bt_open_photo_int:Button
-    lateinit var bt_open_photo_ext:Button
+    lateinit var bt_open_photo:Button
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,8 +62,7 @@ class MainActivity : AppCompatActivity() {
         bt_read_ext = findViewById(R.id.bt_read_ext)
         bt_delete_ext = findViewById(R.id.bt_delete_ext)
         bt_take_photo = findViewById(R.id.bt_take_photo)
-        bt_open_photo_int = findViewById(R.id.bt_open_photo_int)
-        bt_open_photo_ext = findViewById(R.id.bt_open_photo_ext)
+        bt_open_photo = findViewById(R.id.bt_open_photo)
 
         bt_save_int.setOnClickListener { saveInternalFile("PDP_HW") }
         bt_read_int.setOnClickListener { readInternalFile() }
@@ -73,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         bt_read_ext.setOnClickListener { readExternalFile() }
         bt_delete_ext.setOnClickListener { deleteExternalFile() }
         bt_take_photo.setOnClickListener { takePhoto.launch() }
-        bt_open_photo_ext.setOnClickListener { callImagesActivity() }
+        bt_open_photo.setOnClickListener { callImagesActivity() }
 
 
         requestCameraPermissions()
